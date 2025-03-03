@@ -110,6 +110,7 @@ li {
 li > a {
   display: flex;
   text-decoration: none;
+  font-weight: 600;
   gap: 8px;
   color: inherit;
 }
@@ -119,6 +120,14 @@ ul {
   display: flex;
   flex-direction: column;
   gap: 24px;
+}
+
+#dashboard {
+  background-color: #005348;
+  color: white;
+  font-weight: 600;
+  border-radius: 5px;
+  padding: 8px 16px;
 }
 
 .project-name {
@@ -154,3 +163,157 @@ button#apply-loan {
 button#apply-loan:hover {
   box-shadow: 3px 3px 7px rgba(0, 0, 0, 0.3);
 }
+
+/* main */
+main {
+  padding: 32px;
+}
+
+#cards {
+  display: flex;
+  gap: 24px;
+}
+
+#balance,
+#upcoming-payment,
+#insti {
+  width: 324px;
+  height: 184px;
+  border-radius: 12px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 16px;
+}
+
+#balance {
+  background-color: #005348;
+  color: white;
+}
+
+#upcoming-payment {
+  background-color: #fece15;
+  color: black;
+}
+
+#insti {
+  background-color: #7154c3;
+  color: white;
+}
+
+.price {
+  font-size: 28px;
+}
+
+.price,
+.insti-name {
+  font-weight: 600;
+}
+
+.bal-due-date {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.bal-due-date .price + p {
+  display: flex;
+  gap: 8px;
+  font-size: 12px;
+}
+
+.insti-name-logo {
+  display: flex;
+  justify-content: space-between;
+}
+
+div#txns-application {
+  margin-top: 72px;
+  display: grid;
+  grid-template-columns: 3fr 1fr;
+  gap: 36px;
+}
+
+.status-title,
+.txns-title {
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.timeline {
+  position: relative;
+  max-width: 400px;
+  margin: 20px auto;
+  margin-left: 0;
+}
+
+.timeline-item {
+  display: flex;
+  align-items: center;
+  position: relative;
+  margin-bottom: 20px;
+}
+
+.dot {
+  width: 16px;
+  height: 16px;
+  background-color: #0f3d35;
+  border-radius: 50%;
+  position: relative;
+  z-index: 1;
+}
+
+.timeline-item.pending .dot {
+  background-color: #d3d3d3; /* Light gray for pending */
+}
+
+.content {
+  margin-left: 20px;
+}
+
+h3 {
+  margin: 0;
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.content > p {
+  margin: 0;
+  font-size: 14px;
+  color: gray;
+}
+
+table {
+    margin-top: 16px;
+    width: 70%;
+    border-collapse: collapse;
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+  }
+  
+  thead {
+    background-color: #f8f8f8;
+    font-weight: bold;
+  }
+  
+  th, td {
+    padding: 20px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+  }
+  
+  tbody tr:last-child td {
+    border-bottom: none;
+  }
+  
+  td:nth-child(2) { /* Status column */
+    font-weight: bold;
+  }
+  
+  td:nth-child(2) {
+    color: #097969;
+  }
+  
+  td#failed {
+    color: #d32f2f;
+  }
