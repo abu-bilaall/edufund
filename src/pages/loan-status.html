@@ -3,9 +3,168 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../styles/loan-status.css" />
     <title>Loan Status</title>
   </head>
   <body>
-    <h1>Loan Status</h1>
+    <div id="content">
+      <nav id="sidebar">
+        <h1 class="project-name">Edufund</h1>
+        <ul id="menus">
+          <li id="dashboard">
+            <a href="../pages/dashboard.html"
+              ><img
+                src="../../assets/icons/dashboard.svg"
+                alt="dashboard"
+              />Dashboard</a
+            >
+          </li>
+          <li>
+            <a href="../pages/loan-application.html"
+              ><img
+                src="../../assets/icons/loan-application.svg"
+                alt="loan-application"
+              />Apply for Loan</a
+            >
+          </li>
+          <li id="loan-status">
+            <a href="../pages/loan-status.html"
+              ><img
+                src="../../assets/icons/loan-status.svg"
+                alt="loan-status"
+              />Loan Status</a
+            >
+          </li>
+          <li>
+            <a href="../pages/settings.html"
+              ><img
+                src="../../assets/icons/settings.svg"
+                alt="settings"
+              />Settings</a
+            >
+          </li>
+        </ul>
+      </nav>
+      <header>
+        <h1>Hello, Owolabi Daniel 👋</h1>
+        <div class="right">
+          <img src="../../assets/icons/notification.svg" alt="notification" />
+          <img src="../../assets/icons/profile.svg" alt="profile" />
+          <button id="apply-loan">Apply for Loan</button>
+        </div>
+      </header>
+      <main>
+        <p class="message">
+          Congratulations! Your loan has been approved. Funds will be disbursed
+          soon.
+        </p>
+        <div class="details">
+          <div class="sections left-section">
+            <div class="detail-types">
+              <ul>
+                <li><img src="../../assets/icons/status.svg" alt="status">Status</li>
+                <li><img src="../../assets/icons/calendar.svg" alt="loan-type">Loan Type</li>
+                <li><img src="../../assets/icons/amount-approved.svg" alt="amount-approved">Amount Approved</li>
+                <li><img src="../../assets/icons/calendar.svg" alt="loan-start-date">Loan Start Date</li>
+                <li><img src="../../assets/icons/repayment.svg" alt="repayment">Repayment Start Date</li>
+              </ul>
+            </div>
+
+            <div class="detail-values">
+              <ul>
+                <li><span class="approved">Approved</span></li>
+                <li>Tuition Fees</li>
+                <li>₦150,000.00</li>
+                <li>February 2, 2025</li>
+                <li>July 2, 2027</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="sections right-section">
+            <div class="detail-types">
+              <ul>
+                <li><img src="../../assets/icons/institution.svg" alt="institution">Institution</li>
+                <li><img src="../../assets/icons/department.svg" alt="department">Department</li>
+                <li><img src="../../assets/icons/fullname.svg" alt="fullname">Full Name</li>
+                <li><img src="../../assets/icons/matric-no.svg" alt="matric-no">Matric Number</li>
+              </ul>
+            </div>
+
+            <div class="detail-values">
+              <ul>
+                <li>Federal University of Technology, Akure</li>
+                <li>Information Systems</li>
+                <li>Owolabi Daniel Oluwatosin</li>
+                <li>IFS/19/0631</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <div class="loan-status">
+          <div class="loan-header">
+            <p class="loan-title">Loan Status</p>
+            <div class="loan-btns">
+              <button id="filter" class="loan-btns">Filter</button>
+              <button id="receipt" class="loan-btns">Download Receipt</button>
+            </div>
+          </div>
+
+          <table>
+            <thead>
+              <th>TRANSACTION</th>
+              <th>STATUS</th>
+              <th>AMOUNT</th>
+              <th>DATE</th>
+            </thead>
+
+            <tbody>
+              <tr>
+                <td>Loan Repayment</td>
+                <td>Success</td>
+                <td>₦35.000.00</td>
+                <td>12-03-2025</td>
+              </tr>
+
+              <tr>
+                <td>Loan Repayment</td>
+                <td>Success</td>
+                <td>₦35.000.00</td>
+                <td>12-03-2025</td>
+              </tr>
+
+              <tr>
+                <td>Loan Repayment</td>
+                <td>Success</td>
+                <td>₦35.000.00</td>
+                <td>12-03-2025</td>
+              </tr>
+
+              <tr>
+                <td>Loan Repayment</td>
+                <td>Success</td>
+                <td>₦35.000.00</td>
+                <td>12-03-2025</td>
+              </tr>
+
+              <tr>
+                <td>Loan Repayment</td>
+                <td id="failed">Failed</td>
+                <td>₦35.000.00</td>
+                <td>12-03-2025</td>
+              </tr>
+
+              <tr>
+                <td>Loan Repayment</td>
+                <td>Success</td>
+                <td>₦35.000.00</td>
+                <td>12-03-2025</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </main>
+    </div>
   </body>
 </html>
