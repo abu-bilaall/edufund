@@ -108,6 +108,11 @@ li {
   padding-left: 16px;
 }
 
+a > img {
+    width: 18px;
+    height: auto;
+  }
+
 li > a {
   display: flex;
   text-decoration: none;
@@ -199,12 +204,12 @@ main {
 }
 
 .stages {
-    display: flex;
-    flex-direction: column;
-    gap: 8px;
-    justify-content: center;
-    align-items: center;
-    font-size: 14px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  justify-content: center;
+  align-items: center;
+  font-size: 14px;
 }
 
 form {
@@ -257,4 +262,11 @@ label {
   color: white;
   background-color: #005348;
   cursor: pointer;
+}
+
+a {
+  text-decoration: none;
+  font-weight: 600;
+  gap: 8px;
+  color: inherit;
 }

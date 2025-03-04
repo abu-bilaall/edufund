@@ -3,8 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="../styles/loan-application.css" />
-    <!-- <script src="../index.js" defer></script> -->
+    <link rel="stylesheet" href="../styles/loan-app-pg3.css" />
     <title>Apply for Loan</title>
   </head>
   <body>
@@ -68,75 +67,60 @@
             <!-- <div class="academic">Academic Details</div> -->
           </div>
 
-          <img src="../../assets/icons/grey-line.svg" alt="" />
+          <img src="../../assets/icons/green-line.svg" alt="green-line" />
 
           <div class="stages">
-            <div class="circle">3</div>
+            <div id="circle-3" class="circle">3</div>
             <!-- <div class="loan">Loan Details</div> -->
           </div>
         </div>
 
         <form action="#" id="application-form">
           <div class="form-header">
-            <h1>Personal Information</h1>
+            <h1>Loan Details</h1>
             <p>
-              Enter your personal details to verify your identity and process
-              your loan application smoothly.
+              Choose the type of loan you need and specify the amount to support
+              your education
             </p>
           </div>
 
           <div class="form-entries">
-            <label for="fullname">Full Name</label>
-            <input
-              type="text"
-              name="fullname"
-              id="fullname"
-              placeholder="Enter your full name"
-            />
+            <label for="institution">Loan Type</label>
+            <select name="loan-type" id="loan-type">
+                <option value="default">Default</option>
+                <option value="standard">Standard</option>
+                <option value="express">Express</option>
+            </select>
           </div>
 
           <div class="form-entries">
-            <label for="nin">National Identification Number</label>
+            <label for="matric-no">Requested Loan Amount (₦)</label>
             <input
               type="number"
-              name="nin"
-              id="nin"
-              placeholder="Enter your National ID number"
+              name="matric-no"
+              id="matric-no"
+              placeholder="Enter requested loan amount"
             />
           </div>
 
           <div class="form-entries">
-            <label for="dob">Date of Birth</label>
-            <input
-              type="date"
-              name="dob"
-              id="dob"
-              placeholder="Enter your date of birth"
-            />
+            <label for="loan-purpose">Loan Purpose</label>
+            <textarea
+              name="loan-purpose"
+              id="loan-purpose"
+              cols="30"
+              rows="10"
+            ></textarea>
           </div>
 
-          <div class="email-tel">
-            <div class="form-entries">
-              <label for="email">Email Address</label>
-              <input
-                type="email"
-                name="email"
-                id="email"
-                placeholder="Enter your email address"
-              />
-            </div>
-            <div class="form-entries">
-              <label for="phone">Date of Birth</label>
-              <input
-                type="tel"
-                name="phone"
-                id="phone"
-                placeholder="Enter your phone number"
-              />
-            </div>
+          <div class="application-btns">
+            <button id="back" type="button">
+              <a href="./loan-application-pg2.html">< Back</a>
+            </button>
+            <button id="next" type="button">
+              <a href="./loan-application-pg3.html">Submit Application ></a>
+            </button>
           </div>
-
-          <button id="next" type="button"><a href="./loan-application-pg2.html">Next ></a></button>
         </form>
       </main>
     </div>

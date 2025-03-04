@@ -128,7 +128,7 @@ ul {
   gap: 24px;
 }
 
-#loan-status {
+#loan-application {
   background-color: #005348;
   color: white;
   font-weight: 600;
@@ -148,6 +148,7 @@ header {
   justify-content: space-between;
   align-items: center;
   padding: 8px 36px;
+  box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2);
 }
 
 .right {
@@ -169,103 +170,164 @@ button#apply-loan:hover {
   box-shadow: 3px 3px 7px rgba(0, 0, 0, 0.3);
 }
 
-.message {
-  background-color: #ffe6b1;
-  padding: 8px;
-  text-align: center;
-  font-size: 14px;
-}
-
-.loan-title {
-  font-weight: 600;
-  font-size: 18px;
-}
-
-button.loan-btns {
-  background-color: white;
-  border: none;
-  padding: 8px;
-  border-radius: 4px;
-  border: 1px solid #ccc;
-  cursor: pointer;
-}
-
-.loan-header {
-  width: 70%;
+/* main */
+main {
   display: flex;
-  justify-content: space-between;
+  flex-direction: column;
+  justify-content: center;
   align-items: center;
 }
 
-div.loan-btns {
+.application-stages {
   display: flex;
-  gap: 8px;
+  margin-bottom: 40px;
 }
 
-table {
-  margin-top: 20px;
-  width: 70%;
-  border-collapse: collapse;
-  font-family: Arial, sans-serif;
+.circle {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  color: white;
+  background-color: #005348;
+  font-weight: 500;
+  text-align: center;
+  padding: 5px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.stages {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  justify-content: center;
+  align-items: center;
   font-size: 14px;
 }
 
-thead {
-  background-color: #f8f8f8;
-  font-weight: bold;
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 36px;
 }
 
-th,
-td {
-  padding: 20px;
-  text-align: left;
-  border-bottom: 1px solid #ddd;
+.form-header {
+  margin: 32px 0px;
 }
 
-tbody tr:last-child td {
-  border-bottom: none;
+.form-entries {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  /* margin-top: 18px; */
 }
 
-td:nth-child(2) {
-  /* Status column */
-  font-weight: bold;
+.email-tel {
+  display: flex;
+  justify-content: space-between;
+  max-width: 665px;
 }
 
-td:nth-child(2) {
-  color: #097969;
+.form-entries > input {
+  width: 665px;
+  height: 48px;
+  border-radius: 8px;
+  border: 1.5px solid #e2e3e5;
+  padding: 8px;
+  box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2);
 }
 
-td#failed {
-  color: #d32f2f;
+textarea {
+  border-radius: 8px;
+  border: 1.5px solid #e2e3e5;
+  padding: 8px;
+  resize: none;
+  box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2);
 }
 
-.loan-status, .details {
-    margin-left: 18px;
+select {
+  background-color: white;
+  width: 665px;
+  height: 48px;
+  border: none;
+  border-radius: 8px;
+  border: 1.5px solid #e2e3e5;
+  box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2);
 }
 
-.details {
-  width: 80%;
-  margin-top: 32px;
-  margin-bottom: 80px;
+input[name="faculty"],
+input[name="department"] {
+  width: 321px;
+  height: 48px;
 }
 
-.details,
-.sections {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
+label {
+  font-weight: 500;
 }
 
-.details {
-    gap: 250px;
+.application-btns {
+  display: flex;
+  gap: 18px;
 }
 
-.detail-types > ul > li {
-    display: flex;
-    gap: 8px;
-    padding: 0;
+#next {
+  border: none;
+  border-radius: 8px;
+  color: white;
+  background-color: #005348;
+  cursor: pointer;
+  flex-grow: 2;
+  height: 48px;
 }
 
-span.approved {
-    color: #097969;
-    font-weight: 600;
+#back {
+  border: none;
+  border-radius: 8px;
+  color: black;
+  background-color: #f8f9fa;
+  cursor: pointer;
+  height: 48px;
+  width: 188px;
+  box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2);
+}
+
+a {
+  text-decoration: none;
+  font-weight: 600;
+  gap: 8px;
+  color: inherit;
+}
+
+.uploads {
+  width: 665px;
+  height: 163px;
+
+  display: flex;
+  gap: 16px;
+}
+
+.upload-letter {
+  width: 324px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+
+  background-color: #f8f9fa;
+  border-radius: 8px;
+  box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2);
+}
+
+.upload-texts {
+  color: #005348;
+  font-weight: 600;
+}
+
+.upload-limits {
+  font-size: 12px;
+  color: gray;
+  font-weight: 500;
 }

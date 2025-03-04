@@ -128,7 +128,7 @@ ul {
   gap: 24px;
 }
 
-#settings {
+#loan-application {
   background-color: #005348;
   color: white;
   font-weight: 600;
@@ -172,7 +172,159 @@ button#apply-loan:hover {
 
 /* main */
 main {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.application-stages {
+  display: flex;
+  margin-bottom: 40px;
+}
+
+.circle {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  color: white;
+  background-color: #005348;
+  font-weight: 500;
+  text-align: center;
+  padding: 5px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#circle-3 {
+  background-color: #e1e8e7;
+  color: #005348;
+}
+
+.stages {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  justify-content: center;
+  align-items: center;
+  font-size: 14px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 36px;
+}
+
+.form-header {
+  margin: 32px 0px;
+}
+
+.form-entries {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  /* margin-top: 18px; */
+}
+
+.email-tel {
+  display: flex;
+  justify-content: space-between;
+  max-width: 665px;
+}
+
+.form-entries > input {
+  width: 665px;
+  height: 48px;
+  border-radius: 8px;
+  border: 1.5px solid #e2e3e5;
+  padding: 8px;
+  box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2);
+}
+
+select {
+  background-color: white;
+  width: 321px;
+  height: 48px;
+  border: none;
+  border-radius: 8px;
+  border: 1.5px solid #e2e3e5;
+  box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2);
+}
+
+input[name="faculty"],
+input[name="department"] {
+  width: 321px;
+  height: 48px;
+}
+
+label {
+  font-weight: 500;
+}
+
+.application-btns {
+  display: flex;
+  gap: 18px;
+}
+
+#next {
+  border: none;
+  border-radius: 8px;
+  color: white;
+  background-color: #005348;
+  cursor: pointer;
+  flex-grow: 2;
+  height: 48px;
+}
+
+#back {
+  border: none;
+  border-radius: 8px;
+  color: black;
+  background-color: #f8f9fa;
+  cursor: pointer;
+  height: 48px;
+  width: 188px;
+  box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2);
+}
+
+a {
+  text-decoration: none;
+  font-weight: 600;
+  gap: 8px;
+  color: inherit;
+}
+
+.uploads {
+  width: 665px;
+  height: 163px;
+
+  display: flex;
+  gap: 16px;
+}
+
+.upload-letter {
+  width: 324px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+
+  background-color: #f8f9fa;
+  border-radius: 8px;
+  box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2);
+}
+
+.upload-texts {
+  color: #005348;
+  font-weight: 600;
+}
+
+.upload-limits {
+  font-size: 12px;
+  color: gray;
+  font-weight: 500;
 }

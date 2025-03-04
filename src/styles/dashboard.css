@@ -108,6 +108,12 @@ li {
   padding-left: 16px;
 }
 
+a > svg {
+  width: 18px;
+  height: auto;
+  color: white;
+}
+
 li > a {
   display: flex;
   text-decoration: none;
@@ -285,36 +291,38 @@ h3 {
 }
 
 table {
-    margin-top: 16px;
-    width: 70%;
-    border-collapse: collapse;
-    font-family: Arial, sans-serif;
-    font-size: 14px;
-  }
-  
-  thead {
-    background-color: #f8f8f8;
-    font-weight: bold;
-  }
-  
-  th, td {
-    padding: 20px;
-    text-align: left;
-    border-bottom: 1px solid #ddd;
-  }
-  
-  tbody tr:last-child td {
-    border-bottom: none;
-  }
-  
-  td:nth-child(2) { /* Status column */
-    font-weight: bold;
-  }
-  
-  td:nth-child(2) {
-    color: #097969;
-  }
-  
-  td#failed {
-    color: #d32f2f;
-  }
+  margin-top: 16px;
+  width: 70%;
+  border-collapse: collapse;
+  font-family: Arial, sans-serif;
+  font-size: 14px;
+}
+
+thead {
+  background-color: #f8f8f8;
+  font-weight: bold;
+}
+
+th,
+td {
+  padding: 20px;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+}
+
+tbody tr:last-child td {
+  border-bottom: none;
+}
+
+td:nth-child(2) {
+  /* Status column */
+  font-weight: bold;
+}
+
+td:nth-child(2) {
+  color: #097969;
+}
+
+td#failed {
+  color: #d32f2f;
+}
