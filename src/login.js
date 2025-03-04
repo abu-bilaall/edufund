@@ -31,7 +31,7 @@ document.addEventListener("DOMContentLoaded", () => {
       }
 
       // Redirect to dashboard
-      window.location.href = "pages/dashboard.html";
+      window.location.href = "/src/pages/dashboard.html";
     } else {
       alert("Invalid email or password!");
     }
