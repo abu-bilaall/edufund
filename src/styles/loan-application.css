@@ -1,0 +1,260 @@
+/*
+  Josh's Custom CSS Reset
+  https://www.joshwcomeau.com/css/custom-css-reset/
+*/
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+}
+
+body {
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+}
+
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+}
+
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  overflow-wrap: break-word;
+}
+
+p {
+  text-wrap: pretty;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  text-wrap: balance;
+}
+
+#root,
+#__next {
+  isolation: isolate;
+}
+
+/* author's styles */
+@font-face {
+  font-family: "inter";
+  src: url("../../assets/fonts/inter/Inter-VariableFont_opsz\,wght.ttf")
+    format("truetype");
+  font-weight: 100 900;
+}
+
+@font-face {
+  font-family: "pacifico";
+  src: url("../../assets/fonts/pacifico/Pacifico-Regular.ttf")
+    format("truetype");
+  font-weight: 400 700;
+}
+
+body {
+  font-family: "inter", system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
+    Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+
+  color: black;
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+
+/* sidebar styles */
+
+#content {
+  flex: auto;
+  display: grid;
+  grid-template-columns: 253px 1fr;
+  grid-template-rows: 83px 1fr;
+}
+
+nav#sidebar {
+  grid-row: 1 / 3;
+  background-color: #f8f9fa;
+  padding: 18px;
+  padding-top: 32px;
+}
+
+li {
+  list-style-type: none;
+  padding-left: 16px;
+}
+
+li > a {
+  display: flex;
+  text-decoration: none;
+  font-weight: 600;
+  gap: 8px;
+  color: inherit;
+}
+
+ul {
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+#loan-application {
+  background-color: #005348;
+  color: white;
+  font-weight: 600;
+  border-radius: 5px;
+  padding: 8px 16px;
+}
+
+.project-name {
+  font-family: "pacifico";
+  text-align: center;
+  margin-bottom: 48px;
+}
+
+/* header styles */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 8px 36px;
+  box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2);
+}
+
+.right {
+  display: flex;
+  gap: 16px;
+}
+
+button#apply-loan {
+  background-color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+  cursor: pointer;
+  box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2);
+}
+
+button#apply-loan:hover {
+  box-shadow: 3px 3px 7px rgba(0, 0, 0, 0.3);
+}
+
+/* main */
+main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.application-stages {
+  display: flex;
+  margin-bottom: 100px;
+}
+
+.circle {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background-color: #e1e8e7;
+  color: #005348;
+  font-weight: 500;
+  text-align: center;
+  padding: 5px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#circle-1 {
+  color: white;
+  background-color: #005348;
+}
+
+.stages {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    justify-content: center;
+    align-items: center;
+    font-size: 14px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 36px;
+}
+
+.form-header {
+  margin: 32px 0px;
+}
+
+.form-entries {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  /* margin-top: 18px; */
+}
+
+.email-tel {
+  display: flex;
+  justify-content: space-between;
+  width: 665px;
+}
+
+.form-entries > input {
+  width: 665px;
+  height: 48px;
+  border-radius: 8px;
+  border: 1.5px solid #e2e3e5;
+  padding: 8px;
+  box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2);
+}
+
+input[type="email"],
+input[type="tel"] {
+  width: 321px;
+  height: 48px;
+}
+
+label {
+  font-weight: 500;
+}
+
+#next {
+  width: 665px;
+  height: 48px;
+  border: none;
+  border-radius: 8px;
+  color: white;
+  background-color: #005348;
+  cursor: pointer;
+}
