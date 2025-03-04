@@ -178,13 +178,14 @@ main {
 
 #cards {
   display: flex;
+  width: 60%;
   gap: 24px;
 }
 
 #balance,
 #upcoming-payment,
 #insti {
-  width: 324px;
+  flex: auto;
   height: 184px;
   border-radius: 12px;
   display: flex;
@@ -238,7 +239,7 @@ div#txns-application {
   margin-top: 72px;
   display: grid;
   grid-template-columns: 3fr 1fr;
-  gap: 36px;
+  gap: 5rem;
 }
 
 .status-title,
@@ -292,7 +293,7 @@ h3 {
 
 table {
   margin-top: 16px;
-  width: 70%;
+  width: 100%;
   border-collapse: collapse;
   font-family: Arial, sans-serif;
   font-size: 14px;
