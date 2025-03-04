@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./styles.css" />
+    <title>EduFund</title>
+  </head>
+  <body>
+    <!-- login -->
+    <main id="login">
+      <section class="left-section">
+        <h1 id="project-name">Edufund</h1>
+
+        <form action="#" id="login-form">
+          <div class="welcome-header">
+            <h1>Welcome Back!</h1>
+            <p>Manage your student loan with ease</p>
+          </div>
+
+          <div class="form-entries">
+            <label for="mail">Email</label>
+            <input
+              type="email"
+              name="email"
+              id="email"
+              placeholder="Enter your email address"
+            />
+          </div>
+
+          <div class="form-entries">
+            <label for="password">Password</label>
+            <input
+              type="password"
+              name="pwd"
+              id="password"
+              placeholder="Enter your password"
+            />
+          </div>
+
+          <div class="moar">
+            <div id="remember-me" class="checkbox">
+              <input type="checkbox" name="state" id="state" />
+              <label for="state">Remember me</label>
+            </div>
+
+            <p>Forgot Password</p>
+          </div>
+
+          <button id="sign-in">Sign In</button>
+          <p>Don't have an account? <span class="sign-up">Sign up!</span></p>
+        </form>
+      </section>
+      <section class="right-section">
+        <!-- students image -->
+      </section>
+    </main>
+
+    <script src="./src/auth.js"></script>
+    <script src="./src/login.js"></script>g
+  </body>
+</html>
