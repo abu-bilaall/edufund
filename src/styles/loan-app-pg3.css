@@ -181,6 +181,23 @@ main {
 .application-stages {
   display: flex;
   margin-bottom: 40px;
+  gap: 90px;
+}
+
+.stages {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+}
+
+hr {
+  position: absolute;
+  top: 14px;
+  left: 42px;
+  width: 200px;
+  border-color: #005348;
+  z-index: -1;
 }
 
 .circle {
