@@ -108,10 +108,9 @@ li {
   padding-left: 16px;
 }
 
-a > svg {
+a > img {
   width: 18px;
   height: auto;
-  color: white;
 }
 
 li > a {
