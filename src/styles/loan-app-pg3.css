@@ -153,6 +153,7 @@ header {
 
 .right {
   display: flex;
+  align-items: center;
   gap: 16px;
 }
 
@@ -312,9 +313,12 @@ label {
 
 a {
   text-decoration: none;
-  font-weight: 600;
   gap: 8px;
   color: inherit;
+}
+
+button[type="button"] {
+  font-weight: 600;
 }
 
 .uploads {

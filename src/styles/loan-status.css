@@ -152,7 +152,14 @@ header {
 
 .right {
   display: flex;
+  align-items: center;
   gap: 16px;
+}
+
+a {
+  text-decoration: none;
+  gap: 8px;
+  color: inherit;
 }
 
 button#apply-loan {
@@ -239,8 +246,9 @@ td#failed {
   color: #d32f2f;
 }
 
-.loan-status, .details {
-    margin-left: 18px;
+.loan-status,
+.details {
+  margin-left: 18px;
 }
 
 .details {
@@ -256,16 +264,16 @@ td#failed {
 }
 
 .details {
-    gap: 250px;
+  gap: 250px;
 }
 
 .detail-types > ul > li {
-    display: flex;
-    gap: 8px;
-    padding: 0;
+  display: flex;
+  gap: 8px;
+  padding: 0;
 }
 
 span.approved {
-    color: #097969;
-    font-weight: 600;
+  color: #097969;
+  font-weight: 600;
 }
