@@ -181,7 +181,7 @@ main {
 
 .application-stages {
   display: flex;
-  margin-bottom: 80px;
+  margin-bottom: 20px;
   gap: 90px;
 }
 

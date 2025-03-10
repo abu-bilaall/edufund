@@ -216,6 +216,7 @@ hr {
   align-items: center;
 }
 
+/* on moving to page-3, remove this id */
 #circle-3 {
   background-color: #e1e8e7;
   color: #005348;
@@ -262,9 +263,19 @@ form {
   box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2);
 }
 
+/* page-3 specific style */
+textarea {
+  border-radius: 8px;
+  border: 1.5px solid #e2e3e5;
+  padding: 8px;
+  resize: none;
+  box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2);
+}
+
+/* end */
+
 select {
   background-color: white;
-  width: 321px;
   height: 48px;
   border: none;
   border-radius: 8px;
@@ -307,13 +318,6 @@ label {
   width: 188px;
   box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2);
 }
-
-/* a {
-  text-decoration: none;
-  font-weight: 600;
-  gap: 8px;
-  color: inherit;
-} */
 
 a {
   text-decoration: none;
