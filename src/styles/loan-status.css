@@ -252,19 +252,19 @@ td#failed {
 }
 
 .details {
-  width: 80%;
+  /* max-width: 80%; */
   margin-top: 32px;
   margin-bottom: 80px;
 }
 
-.details,
-.sections {
+.details {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
 }
 
-.details {
-  gap: 250px;
+.sections {
+  display: grid;
+  grid-template-columns: repeat(2, 350px);
 }
 
 .detail-types > ul > li {
