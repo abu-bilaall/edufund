@@ -1,3 +1,5 @@
+import { loadPage2 } from "./loan-application-page2.js";
+
 const nextBtn = document.querySelector("button#next-pg3");
 
 nextBtn.addEventListener("click", () => {
@@ -103,14 +105,14 @@ function loadPage3(form) {
   );
 }
 
-function loadPage2(form='') {
-  console.log('back to page 2');
-}
+// function loadPage2(form='') {
+//   console.log('back to page 2');
+// }
 
 let form = document.querySelector('form#application-form');
 form.addEventListener('click', (event) => {
   if (event.target.matches('#back-pg2')) {
     form.replaceChildren();
-    loadPage2();
+    loadPage2(form);
   }
 })
