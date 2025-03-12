@@ -1,4 +1,4 @@
-const nextBtn = document.querySelector("button#next");
+const nextBtn = document.querySelector("button#next-pg3");
 
 nextBtn.addEventListener("click", () => {
   const form = document.querySelector("form");
@@ -82,7 +82,7 @@ function loadPage3(form) {
   applicationBtns.classList.add("application-btns");
 
   const backBtn = document.createElement("button");
-  backBtn.id = "back";
+  backBtn.id = "back-pg2";
   backBtn.type = "button";
   backBtn.textContent = "< Back";
 
@@ -102,3 +102,15 @@ function loadPage3(form) {
     applicationBtns
   );
 }
+
+function loadPage2(form='') {
+  console.log('back to page 2');
+}
+
+let form = document.querySelector('form#application-form');
+form.addEventListener('click', (event) => {
+  if (event.target.matches('#back-pg2')) {
+    form.replaceChildren();
+    loadPage2();
+  }
+})
