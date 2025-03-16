@@ -238,12 +238,12 @@ div.done {
 form {
   display: flex;
   flex-direction: column;
-  gap: 36px;
+  gap: 20px;
   margin-bottom: auto;
 }
 
 .form-header {
-  margin: 32px 0px;
+  margin-bottom: 20px;
 }
 
 .form-entries {
