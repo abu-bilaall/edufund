@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="../styles/loan-application.css" />
     <script src="../index.js" defer></script>
+    <script type="module" src="../modules/loan-application-page2.js"></script>
+    <script type="module" src="../modules/loan-application-page3.js"></script>
     <title>Apply for Loan</title>
   </head>
   <body>
@@ -57,19 +59,19 @@
       <main>
         <div class="application-stages">
           <div class="stages">
-            <div id="circle-1" class="circle">1</div>
-            <hr />
+            <div class="circle done">1</div>
+            <hr id="to-pg2"/>
             <div class="personal">Personal Details</div>
           </div>
 
           <div class="stages">
-            <div class="circle">2</div>
-            <hr id="pending"/>
+            <div id="circle-2" class="circle">2</div>
+            <hr id="to-pg3"/>
             <div class="academic">Academic Details</div>
           </div>
 
           <div class="stages">
-            <div class="circle">3</div>
+            <div id="circle-3" class="circle">3</div>
             <div class="loan">Loan Details</div>
           </div>
         </div>
@@ -134,8 +136,9 @@
             </div>
           </div>
 
-          <button id="next" type="button">
-            <a href="./loan-application-pg2.html">Next ></a>
+          <button id="next-pg2" type="button" class="nextBtns">
+            <!-- <a href="./loan-application-pg2.html">Next ></a> -->
+             Next >
           </button>
         </form>
       </main>

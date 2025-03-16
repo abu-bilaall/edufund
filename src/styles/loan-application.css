@@ -181,7 +181,8 @@ main {
 
 .application-stages {
   display: flex;
-  margin-bottom: 20px;
+  margin-bottom: auto;
+  margin-top: 40px;
   gap: 90px;
 }
 
@@ -197,12 +198,12 @@ hr {
   top: 14px;
   left: 42px;
   width: 200px;
-  border-color: #005348;
+  border: 1px solid #e1e8e7;
   z-index: -1;
 }
 
-hr#pending {
-  border: 1px solid #e1e8e7;
+hr.done {
+  border-color: #005348;
 }
 
 .circle {
@@ -220,7 +221,7 @@ hr#pending {
   align-items: center;
 }
 
-#circle-1 {
+div.done {
   color: white;
   background-color: #005348;
 }
@@ -238,6 +239,7 @@ form {
   display: flex;
   flex-direction: column;
   gap: 36px;
+  margin-bottom: auto;
 }
 
 .form-header {
@@ -276,7 +278,7 @@ label {
   font-weight: 500;
 }
 
-#next {
+#next-pg2 {
   width: 665px;
   height: 48px;
   border: none;
@@ -294,4 +296,94 @@ a {
 
 button[type="button"] {
   font-weight: 600;
+}
+
+/* custom styles for the dynamic pages */
+.uploads {
+  width: 665px;
+  height: 163px;
+
+  display: flex;
+  gap: 16px;
+}
+
+.upload-letter {
+  width: 324px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+
+  background-color: #f8f9fa;
+  border-radius: 8px;
+  box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2);
+}
+
+.upload-texts {
+  color: #005348;
+  font-weight: 600;
+}
+
+.upload-limits {
+  font-size: 12px;
+  color: gray;
+  font-weight: 500;
+}
+
+.application-btns {
+  display: flex;
+  gap: 18px;
+}
+
+#next-pg3,
+#next {
+  border: none;
+  border-radius: 8px;
+  color: white;
+  background-color: #005348;
+  cursor: pointer;
+  flex-grow: 2;
+  height: 48px;
+}
+
+#back-pg2,
+#back {
+  border: none;
+  border-radius: 8px;
+  color: black;
+  background-color: #f8f9fa;
+  cursor: pointer;
+  height: 48px;
+  width: 188px;
+  box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2);
+}
+
+select {
+  background-color: white;
+  height: 48px;
+  padding: 8px;
+  border: none;
+  border-radius: 8px;
+  border: 1.5px solid #e2e3e5;
+  box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2);
+}
+
+select#study-year,
+select#level {
+  width: 320px;
+}
+
+input[name="faculty"],
+input[name="department"] {
+  width: 321px;
+  height: 48px;
+}
+
+textarea {
+  border-radius: 8px;
+  border: 1.5px solid #e2e3e5;
+  padding: 8px;
+  resize: none;
+  box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2);
 }
