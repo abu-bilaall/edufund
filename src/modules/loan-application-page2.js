@@ -1,3 +1,15 @@
+const nextBtn = document.querySelector("button.nextBtns");
+const progressLine = document.querySelector("hr#to-pg2");
+const progressCircle = document.querySelector("div#circle-2");
+
+nextBtn.addEventListener("click", () => {
+  const form = document.querySelector("form");
+  form.replaceChildren();
+  loadPage2(form);
+  progressLine.classList.toggle('done');
+  progressCircle.classList.toggle('done');
+});
+
 export function loadPage2(form) {
   // title: academic details
   const formHeader = document.createElement("div");
@@ -161,37 +173,38 @@ export function loadPage2(form) {
 
   const letterUpload = document.createElement("div");
   letterUpload.classList.add("upload-letter");
-  const uploadIcon00 = document.createElement('img');
+  const uploadIcon00 = document.createElement("img");
   uploadIcon00.src = "../../assets/icons/upload.svg";
-  uploadIcon00.alt = 'letter-upload';
-  const uploadCaption00 = document.createElement('p');
-  uploadCaption00.classList.add('upload-texts');
-  uploadCaption00.textContent ="Upload Admission Letter";
-  const uploadLimit00 =document.createElement('p');
-  uploadLimit00.classList.add('upload-limits');
+  uploadIcon00.alt = "letter-upload";
+  const uploadCaption00 = document.createElement("p");
+  uploadCaption00.classList.add("upload-texts");
+  uploadCaption00.textContent = "Upload Admission Letter";
+  const uploadLimit00 = document.createElement("p");
+  uploadLimit00.classList.add("upload-limits");
   uploadLimit00.textContent = "(Max of 4MB)";
 
   const idCardUpload = document.createElement("div");
   idCardUpload.classList.add("upload-letter");
-  const uploadIcon01 = document.createElement('img');
+  const uploadIcon01 = document.createElement("img");
   uploadIcon01.src = "../../assets/icons/upload.svg";
-  uploadIcon01.alt = 'letter-upload';
-  const uploadCaption02 = document.createElement('p');
-  uploadCaption02.classList.add('upload-texts');
-  uploadCaption02.textContent ="Upload Student ID Card";
-  const uploadLimit01 =document.createElement('p');
-  uploadLimit01.classList.add('upload-limits');
+  uploadIcon01.alt = "letter-upload";
+  const uploadCaption02 = document.createElement("p");
+  uploadCaption02.classList.add("upload-texts");
+  uploadCaption02.textContent = "Upload Student ID Card";
+  const uploadLimit01 = document.createElement("p");
+  uploadLimit01.classList.add("upload-limits");
   uploadLimit01.textContent = "(Max of 4MB)";
 
   const applicationBtns = document.createElement("div");
   applicationBtns.classList.add("application-btns");
-  const backBtn = document.createElement('button');
-  backBtn.id = 'back';
-  backBtn.type = 'button';
+  const backBtn = document.createElement("button");
+  backBtn.id = "back";
+  backBtn.type = "button";
   backBtn.textContent = "< Back";
-  const nextPg3Btn = document.createElement('button');
-  nextPg3Btn.id = 'next-pg3';
-  nextPg3Btn.type = 'button';
+  const nextPg3Btn = document.createElement("button");
+  nextPg3Btn.id = "next-pg3";
+  nextPg3Btn.classList.add("nextBtns");
+  nextPg3Btn.type = "button";
   nextPg3Btn.textContent = "Next >";
 
   formHeader.append(h1, p);
@@ -224,3 +237,10 @@ export function loadPage2(form) {
     applicationBtns
   );
 }
+
+let form = document.querySelector("form#application-form");
+form.addEventListener("click", (event) => {
+  if (event.target.matches("#back")) {
+    window.location.reload();
+  }
+});

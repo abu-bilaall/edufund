@@ -1,14 +1,16 @@
 import { loadPage2 } from "./loan-application-page2.js";
 
-const nextBtn = document.querySelector("button#next-pg3");
+let form = document.querySelector("form#application-form");
+const progressLine2 = document.querySelector("hr#to-pg3");
+const progressCircle2 = document.querySelector("div#circle-3");
 
-nextBtn.addEventListener("click", () => {
-  const form = document.querySelector("form");
-  form.replaceChildren();
-  loadPage3(form);
-
-  const circle3 = document.querySelector("#circle-3");
-  circle3.id = "";
+form.addEventListener("click", (event) => {
+  if (event.target.matches("button#next-pg3")) {
+    form.replaceChildren();
+    loadPage3(form);
+    progressLine2.classList.toggle("done");
+    progressCircle2.classList.toggle("done");
+  }
 });
 
 function loadPage3(form) {
@@ -105,14 +107,11 @@ function loadPage3(form) {
   );
 }
 
-// function loadPage2(form='') {
-//   console.log('back to page 2');
-// }
-
-let form = document.querySelector('form#application-form');
-form.addEventListener('click', (event) => {
-  if (event.target.matches('#back-pg2')) {
+form.addEventListener("click", (event) => {
+  if (event.target.matches("#back-pg2")) {
     form.replaceChildren();
     loadPage2(form);
+    progressLine2.classList.toggle("done");
+    progressCircle2.classList.toggle("done");
   }
-})
+});
